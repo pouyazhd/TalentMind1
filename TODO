@@ -1,2 +1,23 @@
 Data quality phase
 ===================
+data quality:
+    ☐ find outlier data
+    ☐ describe 
+    ☐ info
+    ☐ find distro
+    ☐ normalize
+
+Preprocessing phase
+===================
+data cleaning:
+    ☐ remove nans
+    ☐ replace nans
+
+handle outlier:
+    ☐ find outlier data
+    ☐ impute data
+
+
+To research:
+    Ensemble learning
+    concat models to single model

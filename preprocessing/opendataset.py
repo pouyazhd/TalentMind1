@@ -14,7 +14,13 @@ try:
     from pandas import read_csv, DataFrame
 except Exception as err:
     logging.error(err)
-    exit(1)
+    raise "Error in import pandas. please check if module installed correctly"
+
+try:
+    import kaggle
+except Exception as err:
+    logging.error(err)
+    raise "Error in import kaggle. please check if module installed correctly."
 
 
 class load_data:
@@ -24,7 +30,9 @@ class load_data:
 
         # open dataset
         self.dataset= self.open_csv(filename=filename)
-        pass
+        
+        
+        return self.dataset
 
     def open_csv(self, filename:str)-> DataFrame:
         """oped csv file dataset usuing pandas
@@ -42,3 +50,5 @@ class load_data:
         except Exception as err:
             logging.error(err)
             raise "Error in reading dataset. read logs for more info."
+    
+    def download_from_kaggle()
