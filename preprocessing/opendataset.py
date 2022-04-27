@@ -51,4 +51,5 @@ class load_data:
             logging.error(err)
             raise "Error in reading dataset. read logs for more info."
     
-    def download_from_kaggle()
+    def download_from_kaggle(self):
+        pass
